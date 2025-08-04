@@ -1,0 +1,12 @@
+tools and tech hover effect
+.tech-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.tech-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: #9fc40e;
+  border-color: #e76c19;
+}
