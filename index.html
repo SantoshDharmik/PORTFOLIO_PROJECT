@@ -27,13 +27,17 @@
 
     <link rel="stylesheet" href="./global.css">
 
+    <!-- animate.css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
 
 
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#skspy">
-    <header class="position-fixed w-100 top-0">
-        <div class="container-fluid bg-dark-custom">
+    <header class="position-fixed w-100 top-0 z-3">
+        <div class="container-fluid bg-dark-custom ">
             <div class="container">
                 <!-- starting of navbar -->
                 <nav class="navbar navbar-expand-md " id="skspy">
@@ -54,7 +58,7 @@
                             <li class="nav-item "><a class="nav-link text-light-custom" href="#skills">Skills</a></li>
                             <li class="nav-item "><a class="nav-link text-light-custom" href="#projects">Projects</a>
                             </li>
-                           
+
                             <li class="nav-item "><a class="nav-link text-light-custom" href="#contact">Contact</a></li>
                         </ul>
                     </div>
@@ -74,7 +78,7 @@
 
 
 
-                <div class="row">
+                <div class="row pt-5">
                     <!-- text col  -->
                     <div
                         class="col-12 col-md-6 bg-danger d-flex justify-content-center align-items-center bg-accent1 flex-column">
@@ -88,29 +92,37 @@
                             </span>
                             <div class="d-flex gap-5">
                                 <!-- button  -->
-                                <button class="btn border rounded-5 btn-outline-info px-4">Hire</button>
-                                <button class="btn border rounded-5 btn-outline-info px-4">View</button>
+                                <button class="skbt btn border rounded-5 btn-outline-info px-4">Hire Me</button>
+
+                                <a class="btn border rounded-5 btn-outline-info px-4" href="#projects">View work</a>
                             </div>
 
-                        <div class="d-flex gap-3 mt-4" >
-                         <button class="btn btn-outline-secondary bg-dark rounded-circle">
-                            
-                        <a class="nav-link" href="https://github.com/SantoshDharmik/widesofttecktasks.git"><i class="fa-brands fa-github"></i></a>
-                        </button>
-                        
-                        <button class="btn btn-outline-secondary bg-dark rounded-circle">
-                        <a class="nav-link" href="https://www.linkedin.com/in/santosh-dharmik-781bba31a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin-in"></i></a>
-                        </button>
+                            <div class="d-flex gap-3 mt-4">
+                                <button class="btn btn-outline-secondary bg-dark rounded-circle">
 
-                        <button class="btn btn-outline-secondary bg-dark rounded-circle">
-                            <a class="nav-link" href="https://x.com/SkgammingYt?s=09"><i class="fa-brands fa-x-twitter"></i></a>
-                        </button>
+                                    <a class="nav-link"
+                                        href="https://github.com/SantoshDharmik/widesofttecktasks.git"><i
+                                            class="fa-brands fa-github"></i></a>
+                                </button>
 
-                        <button class="btn btn-outline-secondary bg-dark rounded-circle">
-                        <a class="nav-link"href="https://www.instagram.com/sk_dharmik1728?igsh=MzRlODBiNWFlZA=="><i class="fa-brands fa-instagram"></i></a>
-                        </button>
+                                <button class="btn btn-outline-secondary bg-dark rounded-circle">
+                                    <a class="nav-link"
+                                        href="https://www.linkedin.com/in/santosh-dharmik-781bba31a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                                            class="fa-brands fa-linkedin-in"></i></a>
+                                </button>
 
-                    </div>
+                                <button class="btn btn-outline-secondary bg-dark rounded-circle">
+                                    <a class="nav-link" href="https://x.com/SkgammingYt?s=09"><i
+                                            class="fa-brands fa-x-twitter"></i></a>
+                                </button>
+
+                                <button class="btn btn-outline-secondary bg-dark rounded-circle">
+                                    <a class="nav-link"
+                                        href="https://www.instagram.com/sk_dharmik1728?igsh=MzRlODBiNWFlZA=="><i
+                                            class="fa-brands fa-instagram"></i></a>
+                                </button>
+
+                            </div>
 
                         </div>
                     </div>
@@ -119,8 +131,14 @@
 
 
                     <!-- image col  -->
-                    <div class="col col-md-4 p-5  d-flex align-items-center bg-accent1">
-                        <img class="img-fluid  rounded-circle shadow my-5" src="./Media/1000019037.jpg" alt="">
+
+                    <div class=" 
+                    col col-md-4 p-5  d-flex align-items-center bg-accent1">
+
+                        <img class="animate__animated animate__zoomIn animate animate__infinite img-fluid rounded-circle shadow my-5"
+                            src="./Media/1000019037.jpg" alt="">
+
+
                     </div>
 
                 </div>
@@ -142,7 +160,7 @@
                 <!-- photo  -->
                 <div class="row d-flex justify-content-center align-items-center">
                     <div class="col-md-3 d-none d-md-block col-12">
-                        <img class="img-fluid" style="width: 200px; height: 200px;"src="./Media/1000019037.jpg" alt="">
+                        <img class="img-fluid" style="width: 200px; height: 200px;" src="./Media/1000019037.jpg" alt="">
                     </div>
                     <!-- self intro  -->
                     <div class="col p-5">
@@ -166,8 +184,11 @@
                                 </div>
                             </div>
                             <div class="d-flex gap-3">
-                                <button class="btn rounded-5 px-5 btn-outline-info">Download CV</button>
-                                <button class="btn rounded-5 px-5 btn-outline-info">Contact</button>
+
+                                <a href="./Media/resume.pdf" class="btn rounded-5 px-5 btn-outline-info"
+                                    download>Download CV</a>
+
+                                <a class="btn rounded-5 px-5 btn-outline-info" href="#contact">Contact</a>
                             </div>
 
                         </div>
@@ -179,7 +200,7 @@
 
                 </div>
 
-                <div>
+                <div class="py-5">
                     <!-- new step  -->
                     <div class="text-center fs-1 fw-bold">My Experience</div>
                     <!-- div for experince details -->
@@ -189,8 +210,9 @@
                             <!-- first  -->
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                    <button class="bg-dark-custom text-light-custom fs-3 fw-bold accordion-button collapsed" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#flush1">
+                                    <button
+                                        class="bg-dark-custom text-light-custom fs-3 fw-bold accordion-button collapsed"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#flush1">
                                         Junior Frontend Developer
                                     </button>
                                 </h2>
@@ -214,8 +236,9 @@
                             <!-- second  -->
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                    <button class="bg-dark-custom text-light-custom fs-3 fw-bold accordion-button collapsed" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#flush2">
+                                    <button
+                                        class="bg-dark-custom text-light-custom fs-3 fw-bold accordion-button collapsed"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#flush2">
                                         MERN Stack Developer
                                     </button>
                                 </h2>
@@ -243,8 +266,9 @@
                             <!-- third  -->
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                    <button class="fs-3 fw-bold bg-dark-custom text-light-custom accordion-button collapsed" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#flush3">
+                                    <button
+                                        class="fs-3 fw-bold bg-dark-custom text-light-custom accordion-button collapsed"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#flush3">
                                         Senior MERN Stack Developer
                                     </button>
                                 </h2>
@@ -294,7 +318,7 @@
     </section>
 
     <section id="skills" class="bg-accent1">
-        <div class="container-fluid bg">
+        <div class="container-fluid">
             <div class="container">
                 <!-- skills  -->
                 <div class="p-5">
@@ -415,40 +439,49 @@
                     <div class="p-5 text-center text-light-custom">
                         <h1>Tools & Technologies</h1>
                     </div>
-                    <div>
+                    <div class="pb-5">
                         <!-- first row -->
-                        <div class="row g-2 text-light-custom text-center">
+                        <div class="row text-light-custom text-center gap-3 flex-wrap p-5 mx-5 p-lg-1">
 
-                            <div class="col-lg-2 col-md-4 col-6 tech-box border border-dark rounded-4 bg-accent2 p-5">
-                                <img class="skimg img-fluid mb-2" src="./Media/toolsand tech icons/html-5.png"
-                                    alt="HTML">
+                            <div
+                                class="flex-grow-1 col-lg-1 col-md-4 col-6 tech-box border border-dark rounded-4 bg-accent2 p-5 ">
+                                <img class="animate__animated animate__flip animate__infinite skimg img-fluid mb-2"
+                                    src="./Media/toolsand tech icons/html-5.png" alt="HTML">
                                 <span>HTML</span>
                             </div>
 
-                            <div class="col-lg-2 col-md-4 col-6 tech-box border border-dark rounded-4 bg-accent2 p-5">
-                                <img class="img-fluid mb-2 skimg" src="./Media/toolsand tech icons/css-3.png" alt="CSS">
+                            <div
+                                class="flex-grow-1 col-lg-1 col-md-4 col-6 tech-box border border-dark rounded-4 bg-accent2 p-5">
+                                <img class="animate__animated animate__flip animate__infinite img-fluid mb-2 skimg"
+                                    src="./Media/toolsand tech icons/css-3.png" alt="CSS">
                                 <span>CSS</span>
                             </div>
 
-                            <div class="col-lg-2 col-md-4 col-6 tech-box border border-dark rounded-4 bg-accent2 p-5">
-                                <img class="img-fluid mb-2 skimg" src="./Media/toolsand tech icons/js.png" alt="CSS">
+                            <div
+                                class="flex-grow-1 col-lg-1 col-md-4 col-6 tech-box border border-dark rounded-4 bg-accent2 p-5">
+                                <img class="animate__animated animate__flip animate__infinite img-fluid mb-2 skimg"
+                                    src="./Media/toolsand tech icons/js.png" alt="CSS">
                                 <span>JavaScript</span>
                             </div>
 
-                            <div class="col-lg-2 col-md-4 col-6 tech-box border border-dark rounded-4 bg-accent2 p-5">
-                                <img class="img-fluid mb-2 skimg" src="./Media/toolsand tech icons/atom.png" alt="CSS">
+                            <div
+                                class="flex-grow-1 col-lg-1 col-md-4 col-6 tech-box border border-dark rounded-4 bg-accent2 p-5">
+                                <img class="animate__animated animate__flip animate__infinite img-fluid mb-2 skimg"
+                                    src="./Media/toolsand tech icons/atom.png" alt="CSS">
                                 <span>React</span>
                             </div>
 
-                            <div class="col-lg-2 col-md-4 col-6 tech-box border border-dark rounded-4 bg-accent2 p-5">
-                                <img class="img-fluid mb-2 skimg" src="./Media/toolsand tech icons/programing.png"
-                                    alt="CSS">
+                            <div
+                                class="flex-grow-1 col-lg-1 col-md-4 col-6 tech-box border border-dark rounded-4 bg-accent2 p-5">
+                                <img class="animate__animated animate__flip animate__infinite img-fluid mb-2 skimg"
+                                    src="./Media/toolsand tech icons/programing.png" alt="CSS">
                                 <span>Node.js</span>
                             </div>
 
-                            <div class="col-lg-2 col-md-4 col-6 tech-box border border-dark rounded-4 bg-accent2 p-5">
-                                <img class="img-fluid mb-2 skimg" src="./Media/toolsand tech icons/database.png"
-                                    alt="CSS">
+                            <div
+                                class="flex-grow-1 col-lg-1 col-md-4 col-6 tech-box border border-dark rounded-4 bg-accent2 p-5">
+                                <img class="animate__animated animate__flip animate__infinite img-fluid mb-2 skimg"
+                                    src="./Media/toolsand tech icons/database.png" alt="CSS">
                                 <span>MongoDb</span>
                             </div>
                         </div>
@@ -466,8 +499,8 @@
     <section id="projects">
         <div class="container-fluid bg-dark-custom">
             <div class="container">
-                <div class="p-5 text-center text-light-custom mt-5">
-                    <h1>My Projects</h1>
+                <div class="p-5 text-center text-light-custom">
+                    <h1 class="mt-5">My Projects</h1>
                 </div>
                 <!-- card  -->
                 <div class="row mx-2 my-2">
@@ -475,10 +508,12 @@
 
                     <div class="col-lg-4 col-md-6 col-12 mt-5">
                         <div class="card">
-                            <img class="img-fluid"src="./Media/project images/photo-1551288049-bebda4e38f71.avif" class="card-img-top" alt="...">
+                            <img class="img-fluid" src="./Media/project images/photo-1551288049-bebda4e38f71.avif"
+                                class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">E-Commerce Platform</h5>
-                                <p class="card-text">A full-featured e-commerce platform built with React, Node.js, and MongoDB.</p>
+                                <p class="card-text">A full-featured e-commerce platform built with React, Node.js, and
+                                    MongoDB.</p>
                                 <a href="#" class="btn rounded-5 btn-secondary">React</a>
                                 <a href="#" class="btn rounded-5 btn-secondary">Node.js</a>
                                 <a href="#" class="btn rounded-5 btn-secondary">MongoDB</a>
@@ -489,10 +524,12 @@
                     <div class="col-lg-4 col-md-6 col-12 mt-5">
 
                         <div class="card">
-                            <img class="img-fluid" src="./Media/project images/photo-1522071820081-009f0129c71c.avif" class="card-img-top" alt="...">
+                            <img class="img-fluid" src="./Media/project images/photo-1522071820081-009f0129c71c.avif"
+                                class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Task Management App</h5>
-                                <p class="card-text">A full-featured e-commerce platform built with React, Node.js, and MongoDB.</p>
+                                <p class="card-text">A full-featured e-commerce platform built with React, Node.js, and
+                                    MongoDB.</p>
                                 <a href="#" class="btn rounded-5 btn-secondary">React</a>
                                 <a href="#" class="btn rounded-5 btn-secondary">Node.js</a>
                                 <a href="#" class="btn rounded-5 btn-secondary">MongoDB</a>
@@ -503,10 +540,12 @@
                     <div class="col-lg-4 col-md-6 col-12 mt-5">
 
                         <div class="card">
-                            <img class="img-fluid" src="./Media/project images/photo-1555421689-3f034debb7a6.avif" alt="...">
+                            <img class="img-fluid" src="./Media/project images/photo-1555421689-3f034debb7a6.avif"
+                                alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Social Media Dashboard</h5>
-                                <p class="card-text">Analytics dashboard for social media metrics with real-time updates.</p>
+                                <p class="card-text">Analytics dashboard for social media metrics with real-time
+                                    updates.</p>
                                 <a href="#" class="btn rounded-5 btn-secondary">Next.js</a>
                                 <a href="#" class="btn rounded-5 btn-secondary">Chart.js</a>
                                 <a href="#" class="btn rounded-5 btn-secondary">TypeScript</a>
@@ -528,14 +567,19 @@
 
     </section>
 
-    <section id="contact ">
+    <section id="contact">
         <div class="container-fluid bg-accent1 text-light-custom">
             <div class="container">
                 <div class="text-center p-5 text-light-custom">
                     <h1>Get In Touch</h1>
                 </div>
-                <span><h3>Contact Information</h3></span> <br>
-                <p>Feel free to reach out to me for any questions or opportunities. I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.</p> <br>
+                <span>
+                    <h3>Contact Information</h3>
+                </span> <br>
+                <p class="text-wrap">Feel free to reach out to me for any questions or opportunities.
+                </p>
+                <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your
+                    vision.</p>
                 <div class="row d-flex gap-4 align-items-center">
 
                     <div class="col-1">
@@ -567,79 +611,114 @@
                         <span>Phone</span> <br>
                         <span>+91 9356192274</span>
                     </div>
-                
+
                     <span>Follow Me</span>
 
                     <div class="d-flex gap-4">
-                        
+
                         <button class="btn btn-outline-secondary bg-dark rounded-circle">
-                            
-                        <a class="nav-link" href="https://github.com/SantoshDharmik/widesofttecktasks.git"><i class="fa-brands fa-github"></i></a>
-                        </button>
-                        
-                        <button class="btn btn-outline-secondary bg-dark rounded-circle">
-                        <a class="nav-link" href="https://www.linkedin.com/in/santosh-dharmik-781bba31a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin-in"></i></a>
+
+                            <a class="nav-link" href="https://github.com/SantoshDharmik/widesofttecktasks.git"><i
+                                    class="fa-brands fa-github"></i></a>
                         </button>
 
                         <button class="btn btn-outline-secondary bg-dark rounded-circle">
-                            <a class="nav-link" href="https://x.com/SkgammingYt?s=09"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a class="nav-link"
+                                href="https://www.linkedin.com/in/santosh-dharmik-781bba31a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
                         </button>
 
                         <button class="btn btn-outline-secondary bg-dark rounded-circle">
-                        <a class="nav-link"href="https://www.instagram.com/sk_dharmik1728?igsh=MzRlODBiNWFlZA=="><i class="fa-brands fa-instagram"></i></a>
+                            <a class="nav-link" href="https://x.com/SkgammingYt?s=09"><i
+                                    class="fa-brands fa-x-twitter"></i></a>
+                        </button>
+
+                        <button class="btn btn-outline-secondary bg-dark rounded-circle">
+                            <a class="nav-link" href="https://www.instagram.com/sk_dharmik1728?igsh=MzRlODBiNWFlZA=="><i
+                                    class="fa-brands fa-instagram"></i></a>
                         </button>
 
 
                     </div>
-                   
-                   
+
+
 
                 </div>
-                <div> <br>
-                    <h2>Send Me A Message</h2>
-                    <form action="">
-                        <input type="text">
-                    </form>
 
-                
+                <div>
+                    <h3 class="mt-5 py-5">Send Me a Message</h3>
+                    <form class="" action="">
+                        <label for="" class="form-label">Your Name</label>
+                        <input type="text" class="form-control bg-secondary"> <br>
+
+                        <label for="" class="form-label">Your Email</label>
+                        <input type="email" class="bg-secondary form-control"> <br>
+
+                        <label for="" class="form-label">Subject</label>
+                        <input type="text" class="bg-secondary form-control"> <br>
+
+                        <label for="" class="form-label">Message</label> <br>
+                        <textarea name="" id="" class="bg-secondary form-control"></textarea>
+                    </form> <br><br>
+
+                    <button class="mb-5 form-control btn-outline-info btn rounded-5">
+                        <div class="svg-wrapper-1">
+                            <div class="svg-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path fill="currentColor"
+                                        d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                                    </path>
+                                    
+                                </svg>
+                                <span>Send Message</span>
+                            </div>
+                        </div>
+                        
+                    </button>
+
+
+                    
+
+
                 </div>
-                
-                
+
+
+
+
+
 
 
 
             </div>
         </div>
     </section>
-<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. At natus praesentium numquam possimus suscipit pariatur, molestias est inventore voluptates quam iste porro harum explicabo quo magni tenetur sunt id culpa totam cupiditate aperiam? Doloremque quae earum hic? Optio quia sequi accusantium sapiente quis aliquid neque, maxime culpa a repellendus amet ea eveniet id adipisci in et laudantium. Adipisci mollitia quas explicabo recusandae reprehenderit facere at ducimus numquam! Alias tempora illo dolor, nam obcaecati nesciunt qui eius, harum sunt pariatur, ipsa blanditiis a! Rem quis alias dolore exercitationem recusandae pariatur totam voluptatibus vero, consequatur nam nobis! Laborum, voluptate error, hic iusto enim provident voluptates sunt excepturi, illo nostrum et ipsum. At quibusdam assumenda nobis sequi quo veritatis rerum temporibus recusandae dignissimos excepturi nulla voluptatibus maiores inventore cupiditate accusamus repudiandae amet ratione molestias officiis debitis ea possimus, perspiciatis neque. Ratione ducimus, quidem laboriosam sequi reiciendis temporibus officia tempora. Quam, quis aut libero magni, totam nihil, cupiditate unde adipisci facere at harum voluptate eum sapiente reiciendis! Ipsum unde doloribus, voluptatum sed, voluptas eligendi, in deserunt architecto doloremque nostrum a perspiciatis asperiores necessitatibus sequi facilis harum. Consectetur eveniet asperiores vel dolorum. Ea placeat similique magnam a repellat eius nesciunt aperiam natus in, autem, illum vero error culpa animi aut quasi voluptatibus distinctio. Tempore consequatur sapiente consectetur veniam assumenda, eum debitis culpa. Consequuntur recusandae voluptates itaque dignissimos? Itaque asperiores, quos iure magni cupiditate voluptas aliquam sapiente rem fugiat adipisci, quidem alias beatae atque officia. Perferendis, quod obcaecati magni doloribus quidem dolores ex quis sint necessitatibus, iure fugiat! Corporis eligendi voluptates animi culpa quaerat explicabo rerum, temporibus dolorem obcaecati ipsam perspiciatis enim sunt tenetur exercitationem ea? At fuga, ut et esse assumenda, quasi quis sunt perferendis facere minima impedit. Libero dolores modi, ut rerum eligendi ullam aliquid quo dignissimos ducimus at, culpa nemo perferendis, doloremque perspiciatis?</div>
+
+    <footer class="">
+        <div class="container-fluid bg-dark-custom text-light-custom">
+            <div class="container">
 
 
+                <div class="d-flex flex-column flex-md-row justify-content-between p-5">
+                    <div>
+                        <h1>Portfolio</h1>
+                        <h5>© 2025 Sk dharmik. All rights reserved.</h5>
+                    </div>
+
+                    <div class="mt-4">
+                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-    <footer></footer>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
