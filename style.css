@@ -66,3 +66,14 @@ button:active {
   }
 }
  /* hire me button */
+
+ ul:hover{
+  text-decoration: underline;
+  outline-offset: 50px;
+ }
+
+ .sktextcl {
+  background: linear-gradient(72deg, rgba(50, 98, 240, 1) 48%, rgba(212, 63, 212, 1) 68%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
